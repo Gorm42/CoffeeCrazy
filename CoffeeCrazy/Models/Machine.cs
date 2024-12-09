@@ -8,6 +8,6 @@ namespace CoffeeCrazy.Models
         public bool Status { get; set; }
         public string? Placement { get; set; }
         public Campus Campus { get; set; }
-        public byte[]? MachineImage { get; set; } //nullable
+        public byte[]? MachineImage { get; set; } //nullable 
     }
 }
