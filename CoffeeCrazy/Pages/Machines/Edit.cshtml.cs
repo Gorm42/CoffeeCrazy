@@ -33,7 +33,12 @@ namespace CoffeeCrazy.Pages.Machines
 
         public async Task<IActionResult> OnPostAsync(int id)
         {
-            MachinetoUpdate.MachineImage = _imageService.ConvertImageToByteArray(PictureToUpload);
+            if (PictureToUpload != null)
+            {
+                MachinetoUpdate.MachineImage = _imageService.ConvertImageToByteArray(PictureToUpload);
+
+            }
+            ModelState.Remove("PictureToUpload");
             if (!ModelState.IsValid)
             {
                 return Page();
