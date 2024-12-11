@@ -26,6 +26,7 @@ namespace CoffeeCrazy
             builder.Services.AddScoped<ITokenGeneratorService, TokenGeneratorService>();
             builder.Services.AddScoped<IAccessService, AccessService>();
             builder.Services.AddScoped<IImageService, ImageService>();
+            builder.Services.AddScoped<IJobService, JobService>();
 
             // Session
             builder.Services.AddDistributedMemoryCache();

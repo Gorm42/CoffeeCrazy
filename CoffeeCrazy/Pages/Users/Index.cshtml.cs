@@ -12,6 +12,7 @@ namespace CoffeeCrazy.Pages.Users
 
         private readonly IUserRepo _UserRepo;
         private readonly IAccessService _accessService;
+        
         public IndexModel(IUserRepo userCrudRepository, IAccessService accessService)
         {
             _UserRepo = userCrudRepository;

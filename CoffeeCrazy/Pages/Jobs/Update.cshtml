@@ -8,19 +8,19 @@
 <input type="hidden" asp-for="JobToUpdate.JobId" />
 <form method="post">
     <div>
-        <label>Title</label>
+        <label placeholder="F.eks. Påfyld Kaffe">Title</label>
         <input class="form-control" asp-for="JobToUpdate.Title" />
         <span asp-validation-for="JobToUpdate.Title" class="text-danger"></span>
     </div>
 
     <div>
-        <label>Description</label>
+        <label placeholder="Der skal gøre x, y og eller z.">Description</label>
         <input class="form-control" asp-for="JobToUpdate.Description" />
         <span asp-validation-for="JobToUpdate.Description" class="text-danger"></span>
     </div>
 
     <div>
-        <label>Comment</label>
+        <label placeholder="Hvis der er noget ud over det sædvanlige, skriv det her...">Comment</label>
         <input class ="form-control" asp-for="JobToUpdate.Comment" />
         <span asp-validation-for="JobToUpdate.Comment" class="text-danger"></span>
     </div>
