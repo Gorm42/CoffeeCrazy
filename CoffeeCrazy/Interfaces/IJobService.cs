@@ -4,6 +4,6 @@ namespace CoffeeCrazy.Interfaces
 {
     public interface IJobService
     {
-        Dictionary<string, List<Job>> GroupJobsByTitle(List<Job> jobs)
+        Dictionary<string, List<Job>> GroupJobsByTitle(List<Job> jobs);
     }
 }
