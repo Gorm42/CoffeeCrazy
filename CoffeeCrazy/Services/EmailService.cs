@@ -19,7 +19,7 @@ namespace CoffeeCrazy.Services
             _passwordRepo = passwordRepo;
         }
 
-        /// <summary>
+        /// <summary> 
         /// Sends an email with a specified subject and body to a recipient. 
         /// </summary>
         /// <param name="emailToResive">The email address of the recipient.</param>
