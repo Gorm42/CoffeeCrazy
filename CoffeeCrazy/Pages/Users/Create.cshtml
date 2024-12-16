@@ -3,6 +3,21 @@
 @{
 }
 
+
+@if (TempData["ErrorMessage"] != null)
+{
+        <div style="color: red;">
+        @TempData["ErrorMessage"]
+        </div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+        <div style="color: green;">
+        @TempData["SuccessMessage"]
+        </div>
+}
+
 <div class="card shadow p-4">
     <h2>Opret bruger</h2>
 
